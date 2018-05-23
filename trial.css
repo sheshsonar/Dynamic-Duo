@@ -1,0 +1,48 @@
+/*
+              */
+
+@charset "utf-8";
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.nav-img
+{
+	width:100px;
+	padding:2px;
+}
+.nav a
+{
+	font-size: 25px;
+	color:black;
+	padding: 19px;
+	text-decoration: none;
+	display:inline-block;
+	
+
+	
+}
+.nav {
+	margin-top:8%;
+	margin-left:35%;
+background-color: transparent;
+
+
+}
+
+.nav a:hover {
+background-color: transparent;
+
+image-color:red;
+border-bottom: 2PX SOLID #15F1C5;
+	border-bottom-style:groove;
+
+}
+
+@media screen and (max-width:320px)
+{
+body{
+	background-color:#009BFF;
+
+	}
+}
