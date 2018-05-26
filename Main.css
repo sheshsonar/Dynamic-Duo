@@ -355,14 +355,15 @@ hr {
 		transform: scale(1.2);
 					}
 					
-	#about:hover {
+	#about1:hover, #about2:hover, #about3:hover, #about4:hover, #about5:hover, #about6:hover{
+
 		cursor:pointer;
 		font-size:20px;
 		transform: scale(1.2);
 		
 		}
 		
-	#menu:hover {
+	#menu1:hover, #menu2:hover, #menu3:hover, #menu4:hover, #menu5:hover, #menu6:hover{
 		cursor:pointer;
 		font-size:20px;
 		transform: scale(1.2)
