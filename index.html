@@ -1,103 +1,168 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Home</title>
-<link href="main.css" rel="stylesheet" type="text/css">
-
-<script>
-function run_first() 
-	{
-		if(sessionStorage.item_id) 
-			{
-			document.getElementById(sessionStorage.item_id.toString()).style.backgroundColor= "gray";
-			}
-	}
-
-function nav_item_selected(item_id) 
-	{
-	for(i = 0; i < 6; i++)
-		 {
-			document.getElementById(i.toString()).style.backgroundColor = "";
-		}
-			document.getElementById(item_id.toString()).style.backgroundColor = "gray";
-			//store item_id in sessionStorage
-			sessionStorage.item_id = item_id;
-	}
-</script>
-
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<body>
 
-<body onLoad="run_first()">
-	<div id="wrapper">
-	<header>
-    	<h1>ABC School</h1>
-    </header>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">MUSIC</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="oldevents.html"><span class="glyphicon glyphicon-calendar"></span> EVENT<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"> Old events</a></li>
+            <li><a href="#"> Upcoming Events</a></li>
+              <li><a href="#"> Enquire About Events</a></li>
+            
+          </ul>
+        </li>
+          <li><a href="#"><span class="glyphicon glyphicon-music"></span> Our performers</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> About us</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-phone-alt"></span> Contact US</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-credit-card"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+
+<div class="jumbotron text-center">
+ <a href="performers.html"> 
+  <h1>Our Performers</h1>
+
+ 
+ <div class="slide">
+ <marquee id="slide" behavior="scroll" direction="right" scrollamount="20" overflow="hidden">
+<img src="Aquapella01.jpg" alt="">
+<img src="AVIVA-LANE500.jpg" alt="">
+<img src="AVIVA-TREEcrop400.jpg" alt="">
+<img src="Camerata.jpg" alt="">
+<img src="CelticFyre800.jpg" alt="">
+<img src="Celtic-Fyre-Wall-with-Fire8.jpg" alt="">
+</marquee>	
+</div>
+ 
+ </a> 
+  
+
+</div>
+  
+
+
+  <div class="row">
     
-<div class="nav">
-    	
-         
-         
-         
-         <a href="Membership.html" id="2"  onClick="nav_item_selected(2)">Membership</a>
-            	<a href="Contact Us.html" id="5"  onClick="nav_item_selected(5)">Contact Us</a>        
-            	<a href="About us.html" id="4"  onClick="nav_item_selected(4)">About us</a>
-            	<a href=" performers.html" id="3"  onClick="nav_item_selected(3)">Our performers</a>        
-         <div class="dropdown">
-				<button class="dropbtn" id="1">Event</button>
-					<div class="dropdown-menu">
-						<a href="past.html" onClick="nav_item_selected(1) ">Past</a>
-						<a href="upcoming.html" onClick="nav_item_selected(1)">Upcoming</a>
-					</div>
-		  </div>
-        <a href="" id="0" onClick="nav_item_selected(0)">Home</a><br><br><br>
-         
-      
-         
-  	
-        <a href="Membership.html" id="2"  onClick="nav_item_selected(2)">Membership</a>
-            	<a href="Contact Us.html" id="5"  onClick="nav_item_selected(5)">Contact Us</a>        
-            	<a href="About us.html" id="4"  onClick="nav_item_selected(4)">About us</a>
-            	<a href=" performers.html" id="3"  onClick="nav_item_selected(3)">Our performers</a>        
-         <div class="dropdown">
-				<button class="dropbtn" id="1">Event</button>
-					<div class="dropdown-menu">
-						<a href="past.html" onClick="nav_item_selected(1) ">Past</a>
-						<a href="upcoming.html" onClick="nav_item_selected(1)">Upcoming</a>
-					</div>
-		  </div>
-        <a href="" id="0" onClick="nav_item_selected(0)">Home</a>
+     <div class="col-sm-6">
+     <div class="upcoming">
+<h1>Townsville Community Music Centre</h1>
+		<p>The Townsville Community Music Centre was established in 1983 with the aim of fostering music in Townsville. In the beginning the focus was on promoting private music tuition and music education in schools. This battle was won many years ago and the focus has moved towards general assistance to local musicians, both amateur and professional.
+
+Currently, typical activities include hosting concerts and workshops, assisting musicians and other music organisations in promotions, communication, and funding, and acting as local agents for visiting professionals. Many of these activities simply would not happen without the support of the Music Centre.
+
+The Music Centre is a not-for-profit organisation, employs a part-time manager, and is based at its office at the Civic Theatre, Boundary Street, South Townsville.
+Townsville City Council 
+The Council's Partnerships and Sponsorships scheme provides vital core funding which enables us to maintain the administrative base for all our other activities, and also provides the premises which house our office space. The Council also assists with the performance venues for our concerts and workshops.
+
+Queensland Government 
+The Gambling Community Benefit Fund has assisted us to obtain office furnishings, and sound and lighting equipment for our productions.
+ 
+
+</p>
+ </div>
+    
+  </div>
+  
+  
+  
+<div class="col-sm-6">
+    
+
+
+
+<h1>Membership benifits</h1>
+		<ul>
+        	<li></li>
+        	<li></li>
+        	<li></li>
+        	<li></li>
+        	<li></li>
+        
+        
+        </ul>
+
+
+</div>
+  </div>
+
+   
+    
+    
+    
+   <div class="container">
+ 
+    <div class="row text-center">
+      <h1>Upcoming Events</h1><br><br><br>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="TB600x600-red.jpg" alt="Paris" width="400" height="300">
+          <p><strong>Brasscapades 2 - Townsville Brass</strong></p>
+          <p>Sunday 1st July, 2pm</p>
+          <p>Carlton Theatre - Carlyle Gardens</p>
+          <a href="https://whatson.townsville.qld.gov.au/events/community-events/brasscapades-2-townsville-brass"><button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button></a>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="SNBB2.jpg" alt="New York" width="400" height="300">
+          <p><strong>The Stokes Nicholson Big Band</strong></p>
+          <p>Sunday 9th September, 2pm</p>
+          <p>Carlton Theatre - Carlyle Gardens</p>
+          <a href="http://www.jazztownsville.com/program.html"><button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button></a>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="LOGO.jpg" alt="San Francisco" width="400" height="300">
+          <p><strong>The Music Centre presents</strong></p>
+          <p>Sunday 18th November, 2pm</p>
+           <p>Carlton Theatre - Carlyle Gardens</p>
+           
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+        </div>
+      </div>
+    </div>
+
 </div>
 
 
-    <h1>Welcome to ABC School</h1>
-    <section id="col1">
-    	<h2>Section 1</h2>
-        <p>
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-       
-        </p>
-    </section>
-    <footer><img src="" alt="">Copyright 2018 by Townsville Community Music Centre</footer>
-    </div>
+
+<div class="footer">
+<img src="1200px-Queensland_Government_crest.svg.png" alt="">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<img src="qwe.png" alt="">
+</div>
+
 </body>
 </html>
