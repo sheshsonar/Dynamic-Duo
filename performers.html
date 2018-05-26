@@ -1,86 +1,179 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>our performers</title>
-<link href="main.css" rel="stylesheet" type="text/css">
-
-<script>
-function run_first() 
-	{
-		if(sessionStorage.item_id) 
-			{
-			document.getElementById(sessionStorage.item_id.toString()).style.backgroundColor= "gray";
-			}
-	}
-
-function nav_item_selected(item_id) 
-	{
-	for(i = 0; i < 6; i++)
-		 {
-			document.getElementById(i.toString()).style.backgroundColor = "";
-		}
-			document.getElementById(item_id.toString()).style.backgroundColor = "gray";
-			//store item_id in sessionStorage
-			sessionStorage.item_id = item_id;
-	}
-</script>
-
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<body>
 
-<body onLoad="run_first()">
-	<div id="wrapper">
-	<header>
-    	<h1>ABC School</h1>
-    </header>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">MUSIC</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="oldevents.html"><span class="glyphicon glyphicon-calendar"></span> EVENT<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"> Old events</a></li>
+            <li><a href="#"> Upcoming Events</a></li>
+              <li><a href="#"> Enquire About Events</a></li>
+            
+          </ul>
+        </li>
+          <li><a href="#"><span class="glyphicon glyphicon-music"></span> Our performers</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> About us</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-phone-alt"></span> Contact US</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-credit-card"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+
+<div class="jumbotron text-center">
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+</style>
+<body>
+
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="TCBlogo200.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Townsville Concert Band</h1><br>
+      <h5 class="w3-center"></h5>
+      <p class="w3-large">Do you play clarinet, flute, oboe or bassoon? French horn? Electric bass? Trombone? 
+Improve your skills in a friendly environment and take part in some major musical events!<span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">This is a local community band who meet once a week for rehearsals, with some serious concerts planned throughout the year. The band plays a range of different styles of concert band music, ranging from classical to musical theatre and modern pop.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Aviva String Quartet</h1><br>
+      
+      <p class="w3-text-grey">Four talented musicians combine their skills in a variety of musical styles including fiery Rhumbas, Tangos, Serenades - a mixture of the most divine and swoon-worthy pieces, guaranteed to delight the senses. </p>     <p class="w3-large w3-text-grey w3-hide-medium">Their performances take listeners through a wonderful journey of beautiful melodies and the most romantic music that is guaranteed to leave the senses fulfilled and wanting more.</p> 
+    </div>
     
-<div class="nav">
-    	
-         
-    	
-        <a href="Membership.html" id="2"  onClick="nav_item_selected(2)">Membership</a>
-            	<a href="Contact Us.html" id="5"  onClick="nav_item_selected(5)">Contact Us</a>        
-            	<a href="About us.html" id="4"  onClick="nav_item_selected(4)">About us</a>
-            	<a href=" performers.html" id="3"  onClick="nav_item_selected(3)">Our performers</a>        
-         <div class="dropdown">
-				<button class="dropbtn" id="1">Event</button>
-					<div class="dropdown-menu">
-						<a href="past.html" onClick="nav_item_selected(1) ">Past</a>
-						<a href="upcoming.html" onClick="nav_item_selected(1)">Upcoming</a>
-					</div>
-		  </div>
-        <a href="" id="0" onClick="nav_item_selected(0)">Home</a>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="Aviva2015.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="asd" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Townsville Citizen’s Band Association </h1><br>
+      <h5 class="w3-center"></h5>
+      <p class="w3-large">Townsville Citizen’s Band Association is a dynamic organisation consisting of three Brass Bands.
+
+Townsville Brass is the organisation’s premier performing ensemble. This 30-piece Brass Band performs regularly for public events, and also participate in competitions on state and national levels.
+
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Stokes Nicholson Big Band</h1><br>
+      
+      <p class="w3-text-grey">The Stokes-Nicholson Big Band is a not for profit community 22 piece Big Band playing Jazz and Big Band music</p></div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="Stokes.jpg"
+       class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <hr>
+
 </div>
 
 
-    <h1>Welcome to ABC School</h1>
-    <section id="col1">
-    	<h2>Section 1</h2>
-        <p>
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-       
-        </p>
-    </section>
-    <footer><img src="" alt="">Copyright 2018 by Townsville Community Music Centre</footer>
-    </div>
+
+
+</body>
+</html>
+
+
+
+</div>
+  
+
+<div class="footer">
+<img src="1200px-Queensland_Government_crest.svg.png" alt="">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<img src="qwe.png" alt="">
+</div>
+
 </body>
 </html>

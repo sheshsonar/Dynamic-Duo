@@ -1,86 +1,222 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>About us</title>
-<link href="main.css" rel="stylesheet" type="text/css">
-
-<script>
-function run_first() 
-	{
-		if(sessionStorage.item_id) 
-			{
-			document.getElementById(sessionStorage.item_id.toString()).style.backgroundColor= "gray";
-			}
-	}
-
-function nav_item_selected(item_id) 
-	{
-	for(i = 0; i < 6; i++)
-		 {
-			document.getElementById(i.toString()).style.backgroundColor = "";
-		}
-			document.getElementById(item_id.toString()).style.backgroundColor = "gray";
-			//store item_id in sessionStorage
-			sessionStorage.item_id = item_id;
-	}
-</script>
-
+  <title>About us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<body>
 
-<body onLoad="run_first()">
-	<div id="wrapper">
-	<header>
-    	<h1>ABC School</h1>
-    </header>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">MUSIC</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="Events.html"><span class="glyphicon glyphicon-calendar"></span> EVENT<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"> Old events</a></li>
+            <li><a href="#"> Upcoming Events</a></li>
+              <li><a href="#"> Enquire About Events</a></li>
+            
+          </ul>
+        </li>
+          <li><a href="#"><span class="glyphicon glyphicon-music	
+"></span> Our performers</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> About us</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-phone-alt"></span> Contact US</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><button onclick="document.getElementById('member').style.display='block'" class="glyphicon glyphicon-credit-card" style="width:auto;">Sign Up</button></li>
+        <li><button onclick="document.getElementById('login').style.display='block'" class="glyphicon glyphicon-log-in" style="width:auto;">log in</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+
+<div class="jumbotron text-center">
+
+  <h1>Our Performers</h1>
+  <div class="slide">
+ <marquee id="slide" behavior="scroll" direction="right" scrollamount="20" overflow="hidden">
+<img src="Aquapella01.jpg" alt="">
+<img src="AVIVA-LANE500.jpg" alt="">
+<img src="AVIVA-TREEcrop400.jpg" alt="">
+<img src="Camerata.jpg" alt="">
+<img src="CelticFyre800.jpg" alt="">
+<img src="Celtic-Fyre-Wall-with-Fire8.jpg" alt="">
+</marquee>	
+</div>
+
+</div>
+  
+
+<div class="container">
+  <div class="row">
     
-<div class="nav">
-    	
-         
-    	
-        <a href="Membership.html" id="2"  onClick="nav_item_selected(2)">Membership</a>
-            	<a href="Contact Us.html" id="5"  onClick="nav_item_selected(5)">Contact Us</a>        
-            	<a href="About us.html" id="4"  onClick="nav_item_selected(4)">About us</a>
-            	<a href=" performers.html" id="3"  onClick="nav_item_selected(3)">Our performers</a>        
-         <div class="dropdown">
-				<button class="dropbtn" id="1">Event</button>
-					<div class="dropdown-menu">
-						<a href="past.html" onClick="nav_item_selected(1) ">Past</a>
-						<a href="upcoming.html" onClick="nav_item_selected(1)">Upcoming</a>
-					</div>
-		  </div>
-        <a href="" id="0" onClick="nav_item_selected(0)">Home</a>
+     <div class="col-sm-12">
+     <div class="upcoming">
+	
+    <h1>About us</h1>
+    <ul>
+        <li>The Townsville Community Music Centre was established at a public meeting on May 24th 1983. Then Deputy Mayor, Ken McElligott, opened the meeting and presented a cheque for $50 from the City Council to cover initial petty cash, the Centre's first funds. At the meeting an executive committee was formed. Over the next few weeks that committee drafted a constitution which was endorsed at another public meeting on June 15th. Fred Thompson was Chairman from September 1983, with Gordon Dean as his Deputy and Jan Eagleton as Secretary. <br>Mira Henderson, who had extensive experience in community music work in England, was the first staff member. (Her position was Acting Director because she was only in Townsville for a brief spell.) She instigated a series of classes starting in 1984 using the skills of people living in Townsville to enhance and encourage music learners of all ages.<br>Kirsty Veron was appointed as the first Director. Kirsty was very interested in teaching music to children and had worked with Mira in the 1983 classes. She held this position until 1988 leading the new organisation into a strong position in the Townsville arts community. <br>The Music Centre produced Benjamin Britten's Noyes Fludde in St James Anglican Cathedral. This involved hundreds of children and some of Townsville's best known (and loved) musicians. It was produced by Rachel Berker (now Rachel Matthews) and involved Bernie Lannigan and Sandra Voss in the main parts rehearsed by Bill Williams; Donna McMahon and Jenny Carr rehearsing the strings and recorders and guest conductor Donald Hollier. This was by the no means the only major production mounted by the Music Centre but was probably the largest.</li>
+        <br><li>PAST 2 DECADES <br>A spectacular variety concert was held at the Townsville Civic Theatre to celebrate twenty years of the Music Centre and as a tribute to Mary Lou.In 2005 The Centre moved to offices in the Old Magistrate's Court and then moved to its present office in the Townsville Civic Theatre building</li>
+        
+    </ul>
+ </div>
+    </div>
+  </div>
+  
+  
+  
+  
+   <div class="row">
+    
+     <div class="col-sm-6">
+     <div class="Workwithus">
+<h1>Membership benifits</h1>
+		<ul>
+        	<li></li>
+        	<li></li>
+        	<li></li>
+        	<li></li>
+        	<li></li>
+        
+        
+        </ul>
+ </div>
+    </div>
+    
+    
+       <div class="col-sm-6">
+     <div class="signup">
+<h1>Become a member</h1>
+		<div id="register">
+
+  </div>
+
+ </div>
+    </div>
+  </div>
+  
 </div>
 
 
-    <h1>Welcome to ABC School</h1>
-    <section id="col1">
-    	<h2>Section 1</h2>
-        <p>
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-        This is a test. This is a test. This is a test. 
-       
-        </p>
-    </section>
-    <footer><img src="" alt="">Copyright 2018 by Townsville Community Music Centre</footer>
+<div id="member" class="modal">
+ <span onclick="document.getElementById('member').style.display=''" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>First name</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      
+      <label for="email"><b>Surname</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      
+      <label for="email"><b>Postal Address</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      
+      <label for="email"><b>Day Phone-number</b></label>
+      <input type="number" placeholder="Phone number" name="email">
+      
+      <label for="email"><b>Mobile Phone</b></label>
+      <input type="number" placeholder="Mobile Phone" name="email" required>
+      
+      <br><br><label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label for="email"><b>Suggestion for us</b></label>
+      <input type="text" placeholder="your suggestion" name="email" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('member').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
     </div>
+  </form>
+</div>
+
+
+<div id="login" class="modal">
+  <span onclick="document.getElementById('login').style.display=''" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+
+
+var login = document.getElementById('login');
+var modal = document.getElementById('member');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == login) {
+        login.style.display = "";
+    }
+	else if (event.target == modal) {
+        modal.style.display = "";
+    }
+}
+</script>
+
+
+
+
+<div class="footer">
+<img src="1200px-Queensland_Government_crest.svg.png" alt="">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<img src="qwe.png" alt="">
+</div>
+
 </body>
 </html>
