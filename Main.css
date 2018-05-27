@@ -1,7 +1,7 @@
 .row{margin:5%; padding:5%;background-color:#B1DABD;}
-<<<<<<< HEAD
-.row1{margin:5%; padding:5%;background-color:#B1DABD;}
-=======
+
+
+
 
 
 /*----------------------------------------------------home--------------------------------------------------------------------*/
@@ -17,7 +17,7 @@
 .contactnum{color: #049F8E;}
 .author{color: #59A0E9;}
 .author2 {color: #EF0F2B; padding-bottom:5px; border-bottom:2px dotted black;}
->>>>>>> 95799a7bd30d4876a70046636e2fd48a5aae4ec9
+
 body{background-color:#EDD0D0;}
 
 .footer{display: block; background-color:black;width:100%;position:relative; padding:3%;text-align:center;}
@@ -269,6 +269,8 @@ hr {
 		height:auto;
 		position:relative;
 		alignment-adjust:central;}	
+	
+	.slide2 {padding-right:0%;padding-left:0%; width:auto;}
    }
    
     @media (max-width: 590px){
@@ -279,8 +281,8 @@ hr {
 	 
 	.container{ padding-right:0%;padding-left:0%;}
 	.row {padding-right:0%;padding-left:0%;}
-	.row1{display:none;}
-	
+	.slide2 {padding-right:0%;padding-left:0%; width:auto;}
+	#row1{display:none;}
 	 
 	.footer img {display:relative;
 	margin:0px;
