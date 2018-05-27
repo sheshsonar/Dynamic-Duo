@@ -1,6 +1,6 @@
 .row{margin:5%; padding:5%;background-color:#B1DABD;}
 
-
+#sucess{height:100%; width:100%;padding:20%; ;}
 /*----------------------------------------------------home--------------------------------------------------------------------*/
 
 
@@ -26,6 +26,9 @@ body{background-color:#EDD0D0;}
   text-decoration: none;
   margin: 5px 2px;
 }
+
+a {text-decoration:none;
+	color:white;}
 
 .fa:hover {
     opacity: 0.7;
