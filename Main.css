@@ -1,3 +1,19 @@
+/*----------------------------------------------------home--------------------------------------------------------------------*/
+
+
+.jumbotron{display:inline-block;}
+#memberinfo{ border-right:2px solid black; }
+
+
+.slide2{ height:300px; width:400px; overflow:hidden; margin-left:3%;}
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.contactnum{color: #049F8E;}
+.author{color: #59A0E9;}
+.author2 {color: #EF0F2B; padding-bottom:5px; border-bottom:2px dotted black;}
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
 .row{margin:5%; padding:5%;background-color:#B1DABD;}
 body{background-color:#EDD0D0;}
 
