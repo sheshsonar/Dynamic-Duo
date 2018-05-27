@@ -5,7 +5,7 @@
 
 
 .jumbotron{display:inline-block;}
-#memberinfo{ border-right:2px solid black; }
+
 
 .Workwithus{border-right:2px solid black;}
 .slide2{ height:300px; width:400px; overflow:hidden; margin-left:3%;}
@@ -172,8 +172,8 @@ button:hover {
 
 /* Modal Content/Box */
 .modal-content {
-	color:#FBFBFB;
-    background-color:#0D0C0C;
+	color:#0D0C0C;
+    background-color:#B0AFAF;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -231,6 +231,10 @@ hr {
                 background-color: grey;
 				margin-top:10%;
               }	
+			  
+			  
+			  
+#register{}
 			
 /*------------------------------------------------------EVENTS--------------------------------------------------------------------------------------*/
   .person {
