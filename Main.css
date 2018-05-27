@@ -1,14 +1,18 @@
 .row{margin:5%; padding:5%;background-color:#B1DABD;}
 
+<<<<<<< HEAD
+#sucess{height:100%; width:100%;padding:20%; ;}
+=======
 
 
 
 
+>>>>>>> 7abe99eb266be661971d803bcdb0aa1e1727c726
 /*----------------------------------------------------home--------------------------------------------------------------------*/
 
 
 .jumbotron{display:inline-block;}
-#memberinfo{ border-right:2px solid black; }
+
 
 .Workwithus{border-right:2px solid black;}
 .slide2{ height:300px; width:400px; overflow:hidden; margin-left:3%;}
@@ -30,6 +34,9 @@ body{background-color:#EDD0D0;}
   text-decoration: none;
   margin: 5px 2px;
 }
+
+a {text-decoration:none;
+	color:white;}
 
 .fa:hover {
     opacity: 0.7;
@@ -176,8 +183,8 @@ button:hover {
 
 /* Modal Content/Box */
 .modal-content {
-	color:#FBFBFB;
-    background-color:#0D0C0C;
+	color:#0D0C0C;
+    background-color:#B0AFAF;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -235,6 +242,10 @@ hr {
                 height: 600px;
                 background-color: grey;
               }	
+			  
+			  
+			  
+#register{}
 			
 /*------------------------------------------------------EVENTS--------------------------------------------------------------------------------------*/
   .person {
@@ -454,6 +465,12 @@ hr {
 
 }
 
+
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
 
 
   /*-------------------------------------------------------------------------------------------------------------------------------*/
