@@ -226,6 +226,7 @@ hr {
     border: 1px solid #888;
     width: 100%;
 	height:20%;
+	text-align:center;
 	}
 	
 .contact-details {
@@ -462,8 +463,7 @@ hr {
 		}
 
 
-
-
+}
 
 
 body {font-family: "Times New Roman", Georgia, Serif;}
